@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { timer } from 'rxjs/internal/observable/timer';
+import { map } from 'rxjs/internal/operators/map';
+import { share } from 'rxjs/internal/operators/share';
+import { Subscription } from 'rxjs/internal/Subscription';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-tour-of-heroes';
+  title = 'Tour of Heroes!!';
+  
+  ngOnInit() {
+  }
 }
+
